@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="library.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="navBar1">
+      <div class="navBar2">
+        <div class="navBar">
+          <h4>AirLibrary</h4>
+          <form class="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search Books"
+            />
+          </form>
+          <button id="addBtn">Add</button>
+        </div>
+      </div>
+    </div>
+    <!-- Books Container -->
+
+    <div class="bookContain" id="book">
+      <!-- <div class="bookdiv">
+        <div class="book-image"></div>
+        <div class="book-info">
+          
+        </div>
+        <button class="book-del"></button>
+      </div> -->
+    </div>
+
+    <!-- Modal Pop-up -->
+    <form action="" class="add" id="form-add">
+      <label for="text">Add A New Book</label>
+      <span class="close"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          style="fill: orangered"
+        >
+          <path
+            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"
+          ></path></svg
+      ></span>
+      <input
+        type="text"
+        name="title"
+        style="margin: 20px 0 0"
+        placeholder="Enter book name"
+        id="title"
+      />
+      <br />
+      <br />
+      <input
+        type="text"
+        name="author"
+        id="author"
+        placeholder="Author's name"
+      />
+      <br />
+      <br />
+      <input type="number" name="price" id="price" placeholder="Enter amount" />
+      <br />
+      <br />
+      <input type="file" id="file" accept="img/*">
+      <label for="file" id="image-input">
+        Choose a photo
+      </label>
+      <br />
+      <br />
+      <button class="submit" id="submit">Submit</button>
+    </form>
+    <footer class="footer">
+      <p>(c) AirLibrary 2023</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

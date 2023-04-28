@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navBar1 {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    color: orangered;
+    font-size: 25px;
+    padding: 26px;
+}
+
+.navBar2 {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    width: 50%;
+}
+
+input {
+    width: 100%;
+    padding: 7px;
+}
+
+#addBtn {
+    width: 10%;
+    padding: 7px;
+    background-color: black;
+    color: orangered;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+#addBtn:hover {
+    width: 10%;
+    padding: 7px;
+    background-color: orangered;
+    color: white;
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+
+.navBar h4 {
+    width: 15%;
+}
+
+/* Books */
+.book {
+    width: 100%;
+}
+
+/* Modal */
+.add {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+
+}
+
+.add label {
+    font-size: 36px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.add input[type=text],
+input[type=number] {
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.submit {
+    width: 20%;
+    border: 1px solid black;
+    background-color: black;
+    color: orangered;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.submit:hover {
+    border-radius: 10px;
+    border: none;
+    width: 20%;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: orangered;
+}
+
+.showModal {
+    display: flex;
+}
+
+.filtered {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    width: 100%;
+    color: orangered;
+    font-size: 16px;
+    padding: 26px;
+    text-align: center;
+}
+
+/* Books */
+.bookContain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+    background-color: grey;
+}
+
+.bookDiv {
+    /* background-color: turquoise; */
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+.bookImage {
+    width: 30%;
+}
+
+.bookInfo {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 3px;
+}
+
+.deleteBtn {
+    color: white;
+    background-color: rgb(230, 16, 16);
+    padding: 10px;
+    border: 1px solid rgb(230, 16, 16);
+    border-radius: 5px;
+    width: 70%;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+#image-input {
+    color: black;
+    width: 15%;
+    padding: 10px 0;
+    background-color: orangered;
+    border: 1px solid orangered;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bookTitle {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-weight: 800;
+}
+
+.bookPrice {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bookAuthor {
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    font-style:oblique;
+}
